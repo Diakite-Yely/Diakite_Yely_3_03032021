@@ -28,11 +28,11 @@
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-animation: loader-opactity 3s linear;
-          animation: loader-opactity 3s linear;
+  z-index: -1;
+  -webkit-animation: loader-opactity 4s linear;
+          animation: loader-opactity 4s linear;
   opacity: 0;
   margin: auto;
-  padding: 0;
 }
 
 .loader .loader-round {
@@ -364,10 +364,6 @@ section .lesmenu article .article-contenue .article-text h3 {
   margin-bottom: 5px;
 }
 
-section .lesmenu article .article-contenue .article-text h3 :hover {
-  color: blue;
-}
-
 section .lesmenu article .article-contenue .amour {
   position: relative;
 }
@@ -375,7 +371,13 @@ section .lesmenu article .article-contenue .amour {
 section .lesmenu article .article-contenue .amour .coeur-fond {
   margin-right: 20px;
   font-size: 25px;
-  color: #FF79DA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
@@ -397,13 +399,6 @@ section .lesmenu article .article-contenue .amour .coeur:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 0;
-}
-
-.test {
-  width: 100px;
-  height: 100px;
-  background-image: url(fontawesome-free-5.15.2-desktop/svgs/solid/heart.svg);
-  background-color: blue;
 }
 
 footer {

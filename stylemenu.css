@@ -96,7 +96,13 @@ section .titre .amour {
 section .titre .amour .coeur-fond {
   margin-right: 20px;
   font-size: 25px;
-  color: #FF79DA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 

@@ -1,6 +1,7 @@
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
+$degrade:(#FF79DA, #9356DC);
 *
 {
     margin: 0;
@@ -94,7 +95,12 @@ section
                      {
                          margin-right: 20px;
                          font-size: 25px;
-                         color: $secondary-color;
+                         background-image:linear-gradient($degrade);
+                         background-size: 100%;
+                         background-clip: text;
+                        -webkit-background-clip: text;
+                         color: transparent;
+                         -webkit-text-fill-color: transparent;
                          cursor: pointer;
  
                      }
@@ -163,8 +169,7 @@ section
                width: 350px;
                justify-self: center;
                box-shadow: 1px 5px 5px lightgrey;
-               cursor: pointer;
-              
+               cursor: pointer;            
                overflow: hidden;/*sinon le block choix apparait a l'exterieur*/
                
              
@@ -290,7 +295,7 @@ section
        border-top-right-radius: 20px;
        border-bottom-left-radius: 20px;
        border-bottom-right-radius: 20px;
-       background: linear-gradient( $secondary-color , $primary-color);
+       background: linear-gradient( $degrade);
        width: 220px;
        height: 40px;
        box-shadow: 1px 5px 5px lightgrey;
