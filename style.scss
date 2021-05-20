@@ -1,7 +1,7 @@
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
-$popo:linear-gradient(#e66465, #9198e5);
+$popo:(#e66465, #9198e5);
 *
 {
     margin: 0;
@@ -31,7 +31,8 @@ $popo:linear-gradient(#e66465, #9198e5);
 
     animation: loader-opactity 3s linear;
     opacity: 0;
-    z-index: -1;
+    margin: auto;
+    padding: 0;
 
     .loader-round
     {
@@ -50,7 +51,7 @@ $popo:linear-gradient(#e66465, #9198e5);
           background-color: $primary-color;
           margin-right: 20px;
           animation: loader-round-delay 1s;
-        animation-delay: 0.5;
+        animation-delay: 0.5s;
       }
       .color2
       {
@@ -58,14 +59,14 @@ $popo:linear-gradient(#e66465, #9198e5);
           color: $secondary-color;
           margin-right: 20px;
           animation: loader-round-delay 1s;
-        animation-delay: 1;
+        animation-delay: 1s;
       }
       .color3
       {
           background-color: $tertiary-color;
           color: $tertiary-color;
           animation: loader-round-delay 1s;
-        animation-delay: 2;
+        animation-delay: 2s;
       }
 }
 .omf/*Les titres Ohmyfood*/
