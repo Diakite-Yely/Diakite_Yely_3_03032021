@@ -32,7 +32,8 @@
   -webkit-animation: loader-opactity 4s linear;
           animation: loader-opactity 4s linear;
   opacity: 0;
-  margin: auto;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .loader .loader-round {

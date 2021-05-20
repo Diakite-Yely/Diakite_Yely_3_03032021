@@ -31,7 +31,8 @@ $degrade:(#FF79DA, #9356DC);
     z-index: -1;
     animation: loader-opactity 4s linear;
     opacity: 0;
-    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
 
     .loader-round
     {
