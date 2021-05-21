@@ -20,8 +20,7 @@ $degrade:(#FF79DA, #9356DC);
 }
 
 .loader
-{
-    position: fixed;
+{   position: fixed;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -29,7 +28,7 @@ $degrade:(#FF79DA, #9356DC);
     width: 100%;
     background: linear-gradient($degrade);
     z-index: -1;
-    animation: loader-opactity 4s linear;
+    animation: loader-opactity 3s linear;
     opacity: 0;
     margin-top: 0;
     margin-left: 0;
@@ -66,7 +65,7 @@ $degrade:(#FF79DA, #9356DC);
           background-color: $tertiary-color;
           color: $tertiary-color;
           animation: loader-round-delay 1s;
-        animation-delay: 2s;
+        animation-delay: 1.5s;
       }
 }
 .omf/*Les titres Ohmyfood*/
@@ -76,7 +75,6 @@ $degrade:(#FF79DA, #9356DC);
 body
 {   
     font-family:"arial";
-    transition: 5s;
 }
 p{
     font-family: "Roboto";
@@ -334,6 +332,7 @@ section
                         font-size: 25px;
                         background-image:linear-gradient($degrade);
                         background-size: 100%;
+                        /* mettre le dégrader sur le coeur*/
                         background-clip: text;
                         -webkit-background-clip: text;
                         color: transparent;
@@ -527,11 +526,6 @@ footer
     footer{
         padding-bottom: 20px;
     }
-    .fonctionnement h2
-
-    {
-        font-family: "Shrikhand"
-    }
     li:hover .icon-menu
     {
         animation: rotate-center 2s;
@@ -540,9 +534,5 @@ footer
     li:hover .number
     {
         animation: rotate-center 2s;
-    }
-    section h2 
-    {
-       font-family: "Shrikhand"
     }
 }
