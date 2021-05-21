@@ -81,7 +81,6 @@
 }
 
 body {
-  position: relative;
   font-family: "arial";
   -webkit-transition: 5s;
   transition: 5s;
